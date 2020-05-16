@@ -21,3 +21,8 @@ configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+
+task("runMain", JavaExec::class) {
+    main = "KafkaMetricsApp"
+    classpath = sourceSets["main"].runtimeClasspath
+}

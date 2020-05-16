@@ -1,12 +1,8 @@
 import com.sun.jdmk.comm.HtmlAdaptorServer;
 import com.yammer.metrics.Metrics;
 import com.yammer.metrics.reporting.GraphiteReporter;
-import kafka.metrics.KafkaMetricsReporter;
 import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.metrics.JmxReporter;
-import org.apache.kafka.common.metrics.MetricsReporter;
 import javax.management.ObjectName;
 import java.io.InputStream;
 import java.lang.management.ManagementFactory;
